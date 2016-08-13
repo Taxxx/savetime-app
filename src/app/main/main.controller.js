@@ -13,5 +13,9 @@
       alert('Hola');
     };
 
+    vm.sayBye = function() {
+       alert('Chau');
+    };
+
   }
 })();
