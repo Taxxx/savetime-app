@@ -16,6 +16,10 @@
         charge : 'backend',
         doubts : 'aaaaaa'
       }, {
+        name : 'Pepe',
+        status : '0',
+        charge : 'bbbb',
+        doubts : 'ffff'
 
       }, {
 
