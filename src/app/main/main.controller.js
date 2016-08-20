@@ -8,6 +8,7 @@
   /** @ngInject */
   function MainController() {
     var vm = this;
+    vm.person
 
     vm.user = [
       {
@@ -29,7 +30,16 @@
 
       }, {
 
+        name : 'Jade',
+        status : '5',
+        charge : 'developer',
+        doubts : 'oky doky'
+
       }, {
+        name : 'Luz',
+        status : '6',
+        charge : 'qa'
+        doubts : 'Pika Pika'
 
       }];
 
