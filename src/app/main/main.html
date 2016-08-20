@@ -82,12 +82,6 @@
   </div>
 
 
-
-
-
-
-
-
 <div class="p+" flex-container="row" flex-gutter="24">
     <div flex-item>
         <lx-text-field lx-label="Nombre" lx-fixed-label="true">
@@ -147,11 +141,11 @@
 
       <div class="p+">
         {{ main.datePicker.basic.dateFormatted }}
- 
+
      <div class="mt">
         <lx-button ng-click="main.openDatePicker(main.datePickerId)">Open date picker</lx-button>
     </div>
- 
+
     <lx-date-picker id="{{ main.datePickerId }}"
                     ng-model="main.datePicker.basic.date"
                     lx-callback="main.datePickerCallback(newDate)"
@@ -344,5 +338,6 @@
 
 
   </div>
+
 
 </div>

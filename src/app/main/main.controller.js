@@ -5,8 +5,9 @@
     .module('savetimeApp')
     .controller('MainController', MainController);
 
+
   /** @ngInject */
-  function MainController() {
+  function MainController(LxNotificationService) {
     var vm = this;
 
     vm.sayHello = function() {
@@ -26,7 +27,7 @@
     angular
     	.module('savetimeApp')
         .controller('MainController', MainController);
-   
+
     MainController.$inject = ['LxDatePickerService'];
 
     function MainController(LxDatePickerService)
