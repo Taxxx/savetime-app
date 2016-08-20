@@ -47,7 +47,7 @@
       }, {
         name : 'Luz',
         status : '6',
-        charge : 'qa'
+        charge : 'qa',
         doubts : 'Pika Pika'
 
       }];
