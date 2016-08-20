@@ -22,11 +22,20 @@
         doubts : 'ffff'
 
       }, {
-
+          name : 'Jhona',
+          status : '-1',
+          charge : 'politic',
+          doubts : 'todas'
       }, {
-
+         name : 'Fabiola',
+         status : '1',
+         charge : 'ceo out',
+         doubts : 'ninguna'
       }, {
-
+           name : 'Jorge',
+           status : '1',
+           charge : 'marketing',
+           doubts : 'algunas'
       }, {
 
       }, {
@@ -40,6 +49,5 @@
     vm.sayBye = function() {
        alert('Chau');
     };
-
   }
 })();
