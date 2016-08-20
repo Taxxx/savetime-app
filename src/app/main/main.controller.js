@@ -38,7 +38,6 @@
            charge : 'marketing',
            doubts : 'algunas'
       }, {
-
         name : 'Jade',
         status : '5',
         charge : 'developer',
@@ -49,7 +48,6 @@
         status : '6',
         charge : 'qa',
         doubts : 'Pika Pika'
-
       }];
 
     vm.sayHello = function() {

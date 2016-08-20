@@ -38,6 +38,10 @@
       </div>
     </header>
 
+    <div ng-repeat="n in main.user">
+      {{n.name}}
+    </div>
+
     <table class="data-table">
       <thead>
       <tr class="data-table__selectable-row">
@@ -50,23 +54,14 @@
       </tr>
       </thead>
 
-
       <tbody>
-      <tr class="data-table__selectable-row data-table__selectable-row--is-selected">
-        <td></td>
-        <td>HENRRY</td>
-        <td>1</td>
-        <td>MANAGER</td>
-        <td>NINGUNA</td>
-      </tr>
-
-      <tr class="data-table__selectable-row">
-        <td></td>
-        <td>BRENDA</td>
-        <td>2</td>
-        <td>BACKEND</td>
-        <td>Lorem ipsum</td>
-      </tr>
+          <tr class="data-table__selectable-row" ng-repeat="n in main.user">
+            <td></td>
+            <td>{{n.name}}</td>
+            <td>{{n.status}}</td>
+            <td>{{n.charge}}</td>
+            <td>{{n.doubts}}</td>
+          </tr>
       </tbody>
     </table>
   </div>
