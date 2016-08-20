@@ -9,6 +9,14 @@
   function MainController() {
     var vm = this;
 
+    vm.sayHello = function() {
+      alert('Hola');
+    };
+
+    vm.sayBye = function() {
+       alert('Chau');
+    };
+
   }
 })();
 
