@@ -38,10 +38,6 @@
       </div>
     </header>
 
-    <div ng-repeat="n in main.user">
-      {{n.name}}
-    </div>
-
     <table class="data-table">
       <thead>
       <tr class="data-table__selectable-row">
@@ -53,6 +49,7 @@
         <th><i class="mdi mdi-comment-text"></i><span>DUDAS/PREGUNTAS</span></th>
       </tr>
       </thead>
+
 
       <tbody>
           <tr class="data-table__selectable-row" ng-repeat="n in main.user">
