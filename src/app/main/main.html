@@ -21,6 +21,21 @@
         </div>
       </div>
 
+      <div class="p+">
+        {{ main.datePicker.basic.dateFormatted }}
+ 
+     <div class="mt">
+        <lx-button ng-click="main.openDatePicker(main.datePickerId)">Open date picker</lx-button>
+    </div>
+ 
+    <lx-date-picker id="{{ main.datePickerId }}"
+                    ng-model="main.datePicker.basic.date"
+                    lx-callback="main.datePickerCallback(newDate)"
+                    lx-locale="{{ main.locale }}"
+                    lx-max-date="main.datePicker.basic.maxDate"
+                    lx-min-date="main.datePicker.basic.minDate"></lx-date-picker>
+    </div>
+
       <div class="card__actions">
         <lx-button lx-color="black" lx-type="flat">Share</lx-button>
         <lx-button lx-color="orange" lx-type="flat">Learn more</lx-button>
