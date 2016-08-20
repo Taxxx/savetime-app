@@ -9,6 +9,26 @@
   function MainController() {
     var vm = this;
 
+    vm.user = [
+      {
+        name : 'Henrry',
+        status : '1',
+        charge : 'backend',
+        doubts : 'aaaaaa'
+      }, {
+
+      }, {
+
+      }, {
+
+      }, {
+
+      }, {
+
+      }, {
+
+      }];
+
     vm.sayHello = function() {
       alert('Hola');
     };
