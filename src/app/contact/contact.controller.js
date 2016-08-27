@@ -3,10 +3,10 @@
 
   angular
     .module('savetimeApp')
-    .controller('MainController', MainController);
+    .controller('ContactController', ContactController);
 
   /** @ngInject */
-  function MainController() {
+  function ContactController() {
     var vm = this;
 
   }
