@@ -14,11 +14,13 @@
 
     // Available states on the savetime app
     .constant('STATE', {
-      app:         'app',
+      app:            'app',
 
-      about:       'about',
-      contact:     'contact',
-      login:       'login'
+      home:           'app.home',
+      manage_event:   'app.manageEvent',
+      about:          'app.about',
+      contact:        'app.contact',
+      login:          'app.login'
 
     });
 

@@ -6,7 +6,7 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig) {
+  function config($logProvider, toastrConfig, RestangularProvider, CONFIG) {
     // Enable log
     $logProvider.debugEnabled(true);
 
@@ -16,6 +16,16 @@
     toastrConfig.positionClass = 'toast-top-right';
     toastrConfig.preventDuplicates = true;
     toastrConfig.progressBar = true;
+
+    RestangularProvider.setBaseUrl(CONFIG.__SERVICE_PATH);
+
+    RestangularProvider.setRequestInterceptor(function(elem, operation) {
+      if (operation === 'put') {
+        elem._id = undefined;
+        return elem;
+      }
+      return elem;
+    });
   }
 
 })();

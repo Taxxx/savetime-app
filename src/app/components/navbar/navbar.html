@@ -1,13 +1,23 @@
-<nav class="navbar">
+<header>
+  <!--<button class="btn btn&#45;&#45;m btn&#45;&#45;icon btn&#45;&#45;red" lx-ripple="indigo-500" ng-click="Sidebar.toggleSidebar()">-->
+    <!--<i class="mdi mdi-menu"></i>-->
+  <!--</button>-->
 
-  <ul>
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#/about">About</a></li>
-    <li><a ng-href="#/contact">Contactv</a></li>
-    <li><a ng-href="#/login">Login</a></li>
-  </ul>
-
-  <!--<ul class="acme-navbar-text">-->
+  <nav class="navbar">
+    <ul>
+      <li class="active"><a ng-click="navbar.goToView('home')">Home</a></li>
+      <li><a ng-click="navbar.goToView('manageEvent')">Manager Event</a></li>
+      <li><a ng-click="navbar.goToView('about')">About</a></li>
+      <li><a ng-click="navbar.goToView('contact')">Contact</a></li>
+      <li><a ng-click="navbar.goToView('login')">Login</a></li>
+    </ul>
+    <!--<ul class="acme-navbar-text">-->
     <!--<li>Application was created {{ vm.relativeDate }}.</li>-->
-  <!--</ul>-->
-</nav>
+    <!--</ul>-->
+  </nav>
+</header>
+
+
+
+
+

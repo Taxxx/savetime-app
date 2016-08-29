@@ -6,8 +6,15 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController() {
+  function MainController(RequestService, $state, STATE) {
     var vm = this;
+
+    $state.transitionTo(STATE.home);
+
+    RequestService.getUsers({})
+      .then(function(response){
+        console.log(response);
+      });
 
   }
 })();
