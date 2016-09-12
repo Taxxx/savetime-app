@@ -21,7 +21,6 @@
       about:          'app.about',
       contact:        'app.contact',
       login:          'app.login'
-
     });
 
 })();

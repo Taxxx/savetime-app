@@ -1,3 +1,71 @@
 <div class="container">
-  About
+  <div class="p+">
+    <div class="card">
+      <div class="card__img card__img--top">
+        <img src="/assets/images/portada.jpg" width="100%" height="250px">
+      </div>
+
+      <div class="p+">
+        <span class="fs-subhead tc-black-2 display-block">Fast and Planned</span>
+
+        <div class="paragraph fs-body-1">
+          <p>
+            Fast and Planned, the application that will allow you to plan your events easier and faster, as so desired. Test it!!!.
+          </p>
+        </div>
+      </div>
+      <div class="card__actions">
+        <lx-icon lx-id="account"></lx-icon><lx-button lx-color="orange" lx-type="flat" >Members</lx-button>
+        <lx-icon lx-id="file-document-box"></lx-icon><lx-button lx-color="orange" lx-type="flat">Learn more</lx-button>
+      </div>
+      <div class="card__actions">
+        <div class="data-table-container">
+
+          <table class="data-table">
+
+            <tbody>
+            <tr>
+              <td><lx-button ng-click="vm.openDialog()"><img src="/assets/images/uno.png" width="100px" height="100px"></lx-button></td>
+              <td>Henrry Chuquimia</td>
+              <td>Avanza al futuro</td>
+            </tr>
+            <tr>
+              <td><img src="/assets/images/dos.png" width="100px" height="100px"></td>
+              <td>Brenda Gutierrez</td>
+              <td>Desarrollando el Futuro</td>
+            </tr>
+            <tr>
+              <td><img src="/assets/images/tres.png" width="100px" height="100px"></td>
+              <td>Silvia Alvarado</td>
+              <td>Logrando el Futuro</td>
+            </tr>
+            <tr>
+              <td><img src="/assets/images/cuatro.png" width="100px" height="100px"></td>
+              <td>Andrea Ramos</td>
+              <td>Alcanzo al Futuro</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <lx-dialog id="{{ vm.dialogId }}">
+
+          <div class="p++">
+            <div ng-repeat="person in vm.people">
+              {{ person.name }} - {{ person.email }} - {{ person.age }}
+            </div>
+          </div>
+
+
+    </lx-dialog-content>
+
+    <lx-dialog-footer>
+      <lx-button lx-color="black" lx-type="flat" lx-dialog-close>Cancel</lx-button>
+      <lx-button lx-type="flat" lx-dialog-close>Ok</lx-button>
+    </lx-dialog-footer>
+  </lx-dialog>
 </div>
