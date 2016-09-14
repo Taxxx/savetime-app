@@ -25,7 +25,7 @@
 
             <tbody>
             <tr>
-              <td><lx-button ng-click="vm.openDialog()"><img src="/assets/images/uno.png" width="100px" height="100px"></lx-button></td>
+              <td><lx-button ng-click="vm.openDialog('uno.png')"><img src="/assets/images/uno.png" width="100px" height="100px"></lx-button></td>
               <td>Henrry Chuquimia</td>
               <td>Avanza al futuro</td>
             </tr>
@@ -52,20 +52,4 @@
     </div>
   </div>
 
-  <lx-dialog id="{{ vm.dialogId }}">
-
-          <div class="p++">
-            <div ng-repeat="person in vm.people">
-              {{ person.name }} - {{ person.email }} - {{ person.age }}
-            </div>
-          </div>
-
-
-    </lx-dialog-content>
-
-    <lx-dialog-footer>
-      <lx-button lx-color="black" lx-type="flat" lx-dialog-close>Cancel</lx-button>
-      <lx-button lx-type="flat" lx-dialog-close>Ok</lx-button>
-    </lx-dialog-footer>
-  </lx-dialog>
 </div>
